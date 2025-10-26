@@ -1,6 +1,16 @@
 {
+  "name": "bmtc-smart-bus",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install-all": "npm --prefix backend install && npm --prefix frontend install",
+    "build": "npm --prefix frontend run build && npx cap sync android"
+  },
   "dependencies": {
-    "@capacitor/cli": "^7.4.4",
-    "@capacitor/core": "^7.4.4"
+    "@capacitor/android": "^7.4.4",
+    "@capacitor/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0"
   }
 }

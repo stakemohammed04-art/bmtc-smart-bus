@@ -3,14 +3,35 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "install": "cd backend && npm install && cd ../frontend && npm install",
-    "build": "cd frontend && npm run build && npx cap sync android"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@capacitor/android": "^7.0.0",
     "@capacitor/core": "^7.0.0",
-    "@capacitor/android": "^7.0.0"
+    "axios": "^1.12.2",
+    "bmtc-smart-bus": "file:..",
+    "leaflet": "^1.9.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-leaflet": "^5.0.0",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@capacitor/cli": "^7.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
