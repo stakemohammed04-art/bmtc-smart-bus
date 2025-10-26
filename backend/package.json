@@ -9,7 +9,11 @@
   "dependencies": {
     "@capacitor/android": "^7.0.0",
     "@capacitor/core": "^7.0.0",
-    "bmtc-smart-bus": "file:.."
+    "better-sqlite3": "^12.4.1",
+    "bmtc-smart-bus": "file:..",
+    "express": "^5.1.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "@capacitor/cli": "^7.0.0"
