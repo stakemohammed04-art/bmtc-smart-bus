@@ -1,20 +1,16 @@
 {
-  "name": "bmtc-frontend",
+  "name": "bmtc-smart-bus",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "install": "cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build && npx cap sync android"
   },
   "dependencies": {
-    "axios": "^1.4.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-leaflet": "^4.2.1",
-    "leaflet": "^1.9.4"
+    "@capacitor/core": "^7.0.0",
+    "@capacitor/android": "^7.0.0"
   },
   "devDependencies": {
-    "vite": "^5.0.0"
+    "@capacitor/cli": "^7.0.0"
   }
 }
